@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware, compose } from "redux";
 import { Router, Switch, Route } from "react-router-dom";
-
+import Account from "./components/account/account";
 import reducers from "./reducers";
 
 const createStoreWithMiddleware = applyMiddleware()(
@@ -31,6 +31,7 @@ function main() {
 						<Route path="/" exact component={SignIn} />
 						<Route path="/signin" exact component={SignIn} />
 						<Route path="/signup" exact component={SignUp} />
+						<Route path="/account" exact component={Account} />
 					</Switch>
 				</Layout>
 			</Router>
