@@ -3,18 +3,20 @@ import { SET_HEADER_LINKS, SET_NAVBAR_LINKS } from "../actions/types";
 const INITIAL_STATE = {
 	headerLinks: [
 		{
-			title: "yooo",
+			title: "Shop",
 		},
 		{
-			title: "YOOO",
+			title: "Logout",
 		},
 	],
 	navbarLinks: [
 		{
 			title: "account",
+			active: true,
 		},
 		{
 			title: "purchases",
+			active: false,
 		},
 	],
 };
